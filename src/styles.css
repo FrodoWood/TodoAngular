@@ -1,1 +1,40 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --primary-color: hsl(251, 100%, 84%);
+  --primary-color-hover: #7667ef;
+  --primary-color-text: #fff;
+  --secondary-color: #dad4ff;
+  --secondary-color-hover: #d5ccff;
+  --secondary-color-text: #5e5edb;
+  --background-color: #e9e6ff;
+  --text-color: #202423;
+  --dark-color: #5e5edb;
+
+  /* --primary-color: #5edb8e;
+  --primary-color-hover: #67ef9b;
+  --primary-color-text: #fff;
+  --secondary-color: #d1eedc;
+  --secondary-color-hover: #b7f0cd;
+  --secondary-color-text: #5edb8e;
+  --background-color: #ecf5f6;
+  --text-color: #202423;
+  --dark-color: #3cc972; */
+
+  /* --primary-color: #5eabdb;
+  --primary-color-hover: #67bbef;
+  --primary-color-text: #fff;
+  --secondary-color: #d1e3ee;
+  --secondary-color-hover: #b7daf0;
+  --secondary-color-text: #5eabdb;
+  --background-color: #ecf3f6;
+  --text-color: #202124;
+  --dark-color: #3c93c9; */
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

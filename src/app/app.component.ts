@@ -1,13 +1,29 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
+import { AuthService } from './auth.service';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterModule, FontAwesomeModule],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'movies';
+  title = 'Todo';
+
+  constructor(private authService: AuthService, private router: Router) {}
+
+  logout(): void {
+    this.authService.logout().subscribe({
+      next: (response) => {
+        console.log('Successfully logged out!');
+        this.router.navigate(['/login']);
+      },
+      error: (error) => {
+        console.error('Logout failed.', error);
+      },
+    });
+  }
 }

@@ -1,0 +1,119 @@
+.todo-container {
+  position: relative;
+}
+
+input {
+  caret-color: var(--dark-color);
+}
+
+.input-text.isComplete {
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+  text-decoration-color: b8f184;
+}
+.input-text {
+  border-width: 0px;
+  font-size: 1.2rem;
+}
+.input-text::placeholder {
+  color: var(--secondary-color);
+}
+
+.input-text:focus {
+  box-shadow: none;
+  background-color: var(--primary-color-text);
+  color: var(--dark-color);
+}
+
+.input-text.isNotComplete {
+  /* background-color: rgb(237, 232, 247); */
+  background-color: rgb(250 247 255);
+}
+
+.todo-container:hover .input-text.isNotComplete {
+  color: var(--dark-color);
+  background-color: var(--primary-color-text);
+  cursor: pointer;
+}
+.input-text.isNotComplete:focus,
+.todo-container:hover .input-text.isNotComplete:focus {
+  background-color: var(--primary-color-text);
+  color: var(--dark-color);
+  box-shadow: none;
+
+  /* border-width: 0px; */
+}
+
+.input-text.isComplete {
+  border-color: var(--secondary-color);
+
+  color: var(--secondary-color-text);
+  background-color: var(--secondary-color);
+}
+
+.todo-container:hover .input-text.isComplete {
+  color: var(--secondary-color-text);
+  background-color: var(--secondary-color-hover);
+  cursor: pointer;
+}
+
+.input-text.isComplete:focus,
+.todo-container:hover .input-text.isComplete:focus {
+  color: var(--dark-color);
+  background-color: var(--primary-color-text);
+  box-shadow: none;
+}
+
+.inputCheckbox {
+  padding: 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+  appearance: none;
+  cursor: pointer;
+  position: absolute;
+  top: 22%;
+  left: 0.6rem;
+}
+.inputCheckbox.isNotComplete {
+  background-color: var(--background-color);
+  border: solid 1px var(--secondary-color);
+}
+.inputCheckbox:checked {
+  background-color: var(--primary-color-hover);
+}
+.inputCheckbox:checked::before {
+  content: "✔";
+  font-size: 1.2rem;
+  color: white;
+  position: absolute;
+  transform: translate(30%);
+}
+.inputCheckbox:hover {
+  background-color: var(--primary-color-text);
+}
+.inputCheckbox:checked:hover {
+  cursor: pointer;
+  background-color: var(--dark-color);
+}
+
+.todo-container a {
+  /* transform: translate(-30px); */
+  color: var(--secondary-color-hover);
+  position: absolute;
+  top: 25%;
+  right: 1%;
+  font-size: 1.2rem;
+}
+
+.todo-container a .isNotComplete {
+  color: var(--secondary-color);
+}
+.todo-container a .isComplete {
+  color: var(--primary-color);
+}
+
+.todo-container a :hover {
+  color: var(--dark-color);
+  cursor: pointer;
+}

@@ -1,0 +1,6 @@
+/* You can add your own styles here */
+.navbar-nav .nav-item .nav-link.active {
+    font-weight: bold;
+    color: rgb(54, 54, 54);
+  }
+  

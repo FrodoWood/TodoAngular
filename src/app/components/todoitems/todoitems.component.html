@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="mt-5 mb-5">
+        <input [(ngModel)]="todoItem.name" (keydown.enter)="createTodoItem()" type="text"
+            class="form-control py-3 input-text ps-4" placeholder="New Todo" autofocus>
+    </div>
+
+    <div *ngFor="let todoItem of todoItems; let i = index" class="my-2 todo-container">
+
+        <input [(ngModel)]="todoItem.name" (keydown.enter)="editTodoItem(todoItem.id,todoItem)"
+            (focusout)="editTodoItem(todoItem.id, todoItem)" type="text" class="form-control py-2 ps-5 input-text"
+            placeholder="New Todo" [ngClass]="todoItem.isComplete ? 'isComplete' : 'isNotComplete'" spellcheck="false">
+
+        <input [ngClass]="todoItem.isComplete ? 'isComplete' : 'isNotComplete'"
+            class="align-self-center m-0 inputCheckbox" type="checkbox" name="isComplete"
+            [checked]="todoItem.isComplete" (click)="complete(todoItem)">
+        <a class="">
+            <i (click)="deleteTodoItem(todoItem.id)" class="fa-solid fa-trash" aria-hidden="true"
+                [ngClass]="todoItem.isComplete ? 'isComplete' : 'isNotComplete'"></i>
+        </a>
+
+    </div>
+</div>
