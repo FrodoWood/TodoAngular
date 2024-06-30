@@ -1,10 +1,12 @@
 {
   "/api": {
     "target": "https://localhost:7112",
-    "secure": false
+    "secure": false,
+    "changeOrigin": true
   },
   "/WeatherForecast": {
     "target": "https://localhost:7112",
-    "secure": false
+    "secure": false,
+    "changeOrigin": true
   }
 }

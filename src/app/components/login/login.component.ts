@@ -24,7 +24,7 @@ export class LoginComponent {
       })
       .subscribe({
         next: (response) => {
-          console.log('Logged in successfully!');
+          console.log('Logged in successfully!', response);
           this.router.navigate(['/weather']);
         },
         error: (error) => {
