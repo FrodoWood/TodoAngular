@@ -1,11 +1,11 @@
 {
   "/api": {
-    "target": "https://localhost:7112",
+    "target": "https://104.248.165.232",
     "secure": false,
     "changeOrigin": true
   },
   "/WeatherForecast": {
-    "target": "https://localhost:7112",
+    "target": "https://104.248.165.232",
     "secure": false,
     "changeOrigin": true
   }
