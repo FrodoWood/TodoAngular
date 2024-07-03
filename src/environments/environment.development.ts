@@ -1,5 +1,5 @@
 export const environment = {
     production: false,
-    apiUrl: '/api',
-    weatherUrl: '/WeatherForecast'
+    apiUrl: 'https://localhost:7112/api',
+    weatherUrl: 'https://localhost:7112/WeatherForecast'
 };

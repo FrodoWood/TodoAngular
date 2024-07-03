@@ -1,5 +1,5 @@
 export const environment = {
     production: true,
-    apiUrl: '/api',
-    weatherUrl: '/WeatherForecast'
+    apiUrl: 'https://104.248.165.232/api',
+    weatherUrl: 'https://104.248.165.232/WeatherForecast'
 };
