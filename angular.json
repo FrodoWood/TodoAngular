@@ -71,13 +71,9 @@
           },
           "configurations": {
             "production": {
-              "buildTarget": "TodoAngular:build:production",
-              "proxyConfig": "src/proxy-production.conf.json"
-            },
+              "buildTarget": "TodoAngular:build:production"},
             "development": {
-              "buildTarget": "TodoAngular:build:development",
-              "proxyConfig": "src/proxy-development.conf.json"
-            }
+              "buildTarget": "TodoAngular:build:development"}
           },
           "defaultConfiguration": "development"
         },
