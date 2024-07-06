@@ -27,7 +27,7 @@ input {
 
 .input-text.isNotComplete {
   /* background-color: rgb(237, 232, 247); */
-  background-color: rgb(250 247 255);
+  background-color: rgb(252 252 255);
 }
 
 .todo-container:hover .input-text.isNotComplete {

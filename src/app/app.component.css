@@ -1,6 +1,15 @@
 /* You can add your own styles here */
-.navbar-nav .nav-item .nav-link.active {
-    font-weight: bold;
-    color: rgb(54, 54, 54);
+.navbar-nav .nav-link{
+  font-weight: 500;
+    color: var(--background-color);
   }
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+    color: var(--primary-color-text);
+  }
+
+ul .dropdown-menu{
+  width: fit-content;
+  min-width: fit-content;
+}
   

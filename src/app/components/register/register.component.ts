@@ -27,7 +27,7 @@ export class RegisterComponent {
       .subscribe({
         next: (response) => {
           console.log('Registered successfully!');
-          this.router.navigate(['/weather']);
+          this.router.navigate(['/todo']);
         },
         error: (error) => {
           console.error('Registration failed', error);
