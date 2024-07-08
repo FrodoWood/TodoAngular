@@ -6,7 +6,7 @@
 
     <div *ngFor="let todoItem of todoItems; let i = index" class="my-2 todo-container">
 
-        <input [(ngModel)]="todoItem.name" (keydown.enter)="editTodoItem(todoItem.id,todoItem)"
+        <input [(ngModel)]="todoItem.name" (keydown.enter)="onEnterKeyEdit($event,todoItem.id,todoItem)"
             (focusout)="editTodoItem(todoItem.id, todoItem)" type="text" class="form-control py-2 ps-5 input-text"
             placeholder="New Todo" [ngClass]="todoItem.isComplete ? 'isComplete' : 'isNotComplete'" spellcheck="false">
 

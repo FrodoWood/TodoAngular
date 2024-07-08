@@ -52,6 +52,10 @@ export class TodoitemsComponent implements OnInit {
     event.preventDefault();
     this.createTodoItem(); 
 }
+  onEnterKeyEdit(event: Event, id:number, item:any) {
+    event.preventDefault();
+    this.editTodoItem(id, item); 
+}
 
 
   createTodoItem(): void {
