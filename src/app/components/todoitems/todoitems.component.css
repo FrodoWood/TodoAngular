@@ -9,7 +9,6 @@ input {
 .input-text.isComplete {
   text-decoration: line-through;
   text-decoration-thickness: 1px;
-  text-decoration-color: b8f184;
 }
 .input-text {
   border-width: 0px;
@@ -28,6 +27,7 @@ input {
 .input-text.isNotComplete {
   /* background-color: rgb(237, 232, 247); */
   background-color: rgb(252 252 255);
+  /* box-shadow: 0 0px 10px 0px  rgba(255, 255, 255, 0.725); */
 }
 
 .todo-container:hover .input-text.isNotComplete {
@@ -97,23 +97,35 @@ input {
   background-color: var(--dark-color);
 }
 
-.todo-container a {
+.todo-container .deleteTodo {
   /* transform: translate(-30px); */
   color: var(--secondary-color-hover);
   position: absolute;
   top: 25%;
-  right: 1%;
+  right: 0.8rem;
   font-size: 1.2rem;
 }
 
-.todo-container a .isNotComplete {
+.todo-container .deleteTodo.isNotComplete {
   color: var(--secondary-color);
 }
-.todo-container a .isComplete {
+.todo-container .deleteTodo.isComplete {
   color: var(--primary-color);
 }
 
-.todo-container a :hover {
+.todo-container .deleteTodo:hover {
   color: var(--dark-color);
   cursor: pointer;
+}
+
+.todo-container .addTodo{
+  color: var(--secondary-color-hover);
+  position: absolute;
+  top: 30%;
+  right: 0.6rem;
+  font-size: 1.6rem;
+}
+
+.todo-container .addTodo:hover{
+  color: var(--dark-color);
 }
