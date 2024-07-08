@@ -1,0 +1,11 @@
+.card-body h3{
+    color: var(--dark-color);
+}
+
+form button{
+    background-color: var(--primary-color-hover);
+
+    &:hover{
+        background-color: var(--dark-color);
+    }
+}
