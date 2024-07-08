@@ -48,6 +48,12 @@ export class TodoitemsComponent implements OnInit {
     });
   }
 
+  onEnterKey(event: Event) {
+    event.preventDefault();
+    this.createTodoItem(); 
+}
+
+
   createTodoItem(): void {
     if (this.todoItem.name == '') return;
 
